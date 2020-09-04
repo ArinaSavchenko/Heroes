@@ -29,7 +29,7 @@ export class HeroService {
     return of(HEROES.find(hero => hero.id === id));
   }
   /** Log a HeroService message with the MessageService */
-  private log(message: string) {
+  private log(message: string): void {
     this.messageService.add(`HeroService: ${message}`);
   }
   private heroesUrl = 'api/heroes';  // URL to web api
