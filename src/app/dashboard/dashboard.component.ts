@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
+  // tslint:disable-next-line:typedef
   ngOnInit() {
     this.getHeroes();
   }
